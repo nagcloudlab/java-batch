@@ -1,0 +1,8 @@
+
+Recommended class hierarchy
+--------------------------------
+
+
+Top-Level : Interface
+Middle-Level : Abstract class ( If Required )				
+Bottom-Level: Implementation (s )				

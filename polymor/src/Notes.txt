@@ -1,0 +1,42 @@
+
+
+
+- static / compile-time ==> Overloading
+- dynamic / runtime  ==> Overrding
+
+
+
+
+coding rules for method overloading
+--------------------------------
+
+
+- Must Be same
+
+	-> Method Name
+	
+- Must be different
+
+	-> Type | Order | Number of arguments	
+	
+- May be different
+
+	- ReturnType	
+	- Access specifiers
+	
+
+coding rules for method overriding
+--------------------------------
+
+
+- Must Be same
+
+	-> Method Name
+	-> Type | Order | Number of arguments
+	-> Return Type
+	
+- May be different
+
+	- Access specifier ( but shud not reduce visibility )			
+
+
