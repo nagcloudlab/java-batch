@@ -1,0 +1,13 @@
+
+
+Process:
+
+    -> One Whole execution in OS
+    -> has it's own memory
+
+Thread:
+
+    -> Piese of independent execution within process
+    -> each threads has it's stack-memory , shared heap memory
+
+    

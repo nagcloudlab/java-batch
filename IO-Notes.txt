@@ -1,0 +1,53 @@
+
+
+java.io.*
+----------
+
+
+InputStream
+OutputStream
+
+Reader
+Writer
+
+source: file
+
+FileInputStream
+FileOutputStream
+
+FileReader
+FileWriter
+
+source: buffer
+
+BufferedInputStream
+BufferedOutputStream
+
+BufferedReader
+BufferedWriter
+
+
+object conversion IO classes
+
+ObjectInputStream
+ObjectOutputStream
+
+8-bit stream to 16-bit stream conversion
+
+InputStreamReader
+
+
+-------------------------------------
+
+
+serialization
+
+ by converting java-object to byte-stream,
+ store-it in file-system or transfer over network to other java-application
+
+ why we need ?
+
+ ==> to keep passive object outside heap memory
+ ==> to reuse objects when JVM-reboots
+ ==> to distribute data from one java application to other
+
