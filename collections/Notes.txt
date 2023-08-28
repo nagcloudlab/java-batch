@@ -1,0 +1,54 @@
+
+
+
+types of collections
+-----------------------
+
+1. list
+    -> index based
+    -> ordered
+    -> hold duplicate elements
+2. set
+    -> unique elements
+    -> ordered / un-ordered / sorted
+ 3. map
+    -> key + value based
+
+
+ collection classes
+ --------------------------
+
+java.util.*;
+
+ 1. list
+
+    - Vector     ( dynamic-array )  ( thread-safe )
+        - Stack  ( lifo )
+    - ArrayList  ( dynamic-array )
+    - LinkedList ( DLL )
+
+ 2. Set
+
+    - TreeSet    ( b-tree )    ( sorted )
+    - HashSet    ( hashtable ) ( unordered )
+    - LinkedHashSet ( hashtable + dll ) ( ordered )
+
+
+ 3. Map
+
+    - TreeMap    ( b-tree )    ( sorted )
+    - HashMap    ( hashtable ) ( unordered )
+    - LinkedHashMap ( hashtable + dll ) ( ordered )
+
+
+4. Queue
+
+    - LinkedList
+    - PriorityQueue
+    - Deque
+
+ ----------------------------------------------------------------
+
+ java.util.concurrent.*;
+
+----------------------------------------------------------------

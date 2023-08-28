@@ -1,0 +1,9 @@
+
+How to create new thread ?
+
+
+	step-1 : create instance of 'java.lang.Thread' class
+	step-2 : assign a task as runnable object
+	step-3 : start threads i.e allocate new-stack memory
+	step-4 : manage thread-life cycyle
+	
