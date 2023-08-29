@@ -1,0 +1,46 @@
+
+----------------------------------------------------------------
+Money Transfer System
+----------------------------------------------------------------
+
+Data Model
+------------
+
+    - Account ( number,balance )
+    - Transaction ( id, amount, type, dateTime , account)
+
+    one account has many transactions
+    many transactions belongs to one account
+
+--------------------------------
+Layer(s)
+--------------------------------
+
+1. DAO / Repository Layer
+
+        => data accessing logic from data-source
+
+        a. AccountRepository
+        b. TransactionRepository
+
+2. Business/Service Layer
+
+        => data processing logic
+
+        a. TransferService
+        b. StatementService
+
+
+----------------------------------------------------------------        
+
+project
+
+com.example
+    - model
+    - repository
+    - service
+    - exception
+    - factory
+    - Application
+
+----------------------------------------------------------------  

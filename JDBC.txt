@@ -1,0 +1,40 @@
+
+
+
+s/w
+
+    - application ==> Process data
+
+        - object model
+
+    - datasource ==> Persist data
+
+         - relational model   
+
+
+ORM ( Ibject Relational Mapping )
+
+----------------------------------------------------------------
+
+
+How to to do ORM ? 
+
+=> using JDBC Api  ( java.sql.* )
+
+----------------------------------------------------------------
+
+Basic steps to wotk with JDBC API
+
+
+step-1: register database-driver
+step-2: create connection to database
+
+step-3: create jdbc-statements with SQL
+step-4: execute statements & process results
+
+step-5: manage transaction
+step-6: manage SQL execeptions
+
+step-7: close connection to database
+
+----------------------------------------------------------------
