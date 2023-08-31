@@ -1,0 +1,5 @@
+
+
+
+UI = data + style + behavior
+Web UI = HTML + CSS + JavaScript
