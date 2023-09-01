@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>mts-v2</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="display-1">mts-v2</div>
+		<hr />
+
+		<ul class="nav nav-pills">
+			<li class="nav-item">
+				<a class="nav-link" href="#">Transfer</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Statement</a>
+			</li>
+		</ul>
+		<hr />
+
+
+		<div class="row">
+			<div class="col-4">
+				<div class="card">
+					<div class="card-header">Transfer Form</div>
+					<div class="card-body">
+						<form action="transfer" method="post">
+							<div class="form-group">
+								<label>Amount</label>
+								<input name="amount" class="form-control" />
+							</div>
+							<div class="form-group">
+								<label>Source</label>
+								<input name="source" class="form-control" />
+							</div>
+							<div class="form-group">
+								<label>Destination</label>
+								<input name="destination" class="form-control" />
+							</div>
+							<hr />
+							<button class="btn btn-dark">Transfer</button>
+							<hr />
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+</body>
+
+</html>
