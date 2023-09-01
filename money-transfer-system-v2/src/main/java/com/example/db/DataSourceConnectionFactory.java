@@ -12,7 +12,7 @@ public class DataSourceConnectionFactory {
 	private static Properties properties = new Properties();
 	static {
 //		try {
-//			FileInputStream fis = new FileInputStream("WEB-INF/db.properties");
+//			FileInputStream fis = new FileInputStream("db.properties");
 //			properties.load(fis);
 //		} catch (FileNotFoundException e) {
 //			e.printStackTrace();

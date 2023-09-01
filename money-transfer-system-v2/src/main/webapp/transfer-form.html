@@ -30,18 +30,18 @@
 				<div class="card">
 					<div class="card-header">Transfer Form</div>
 					<div class="card-body">
-						<form action="transfer" method="post">
+						<form id="transfer-form" action="transfer" method="post">
 							<div class="form-group">
 								<label>Amount</label>
-								<input name="amount" class="form-control" />
+								<input id="amount" name="amount" class="form-control" />
 							</div>
 							<div class="form-group">
 								<label>Source</label>
-								<input name="source" class="form-control" />
+								<input id="source" name="source" class="form-control" />
 							</div>
 							<div class="form-group">
 								<label>Destination</label>
-								<input name="destination" class="form-control" />
+								<input id="destination" name="destination" class="form-control" />
 							</div>
 							<hr />
 							<button class="btn btn-dark">Transfer</button>
@@ -54,7 +54,9 @@
 
 
 	</div>
-
+	
+	<script src="./index.js"></script>
+	
 </body>
 
 </html>

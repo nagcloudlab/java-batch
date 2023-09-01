@@ -16,10 +16,10 @@
 
 		<ul class="nav nav-pills">
 			<li class="nav-item">
-				<a class="nav-link" href="#">Transfer</a>
+				<a class="nav-link" href="transfer-form.html">Transfer</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Statement</a>
+				<a class="nav-link" href="statement">Statement</a>
 			</li>
 		</ul>
 		<hr />
@@ -30,7 +30,7 @@
 				<div class="card">
 					<div class="card-header">Transfer Status</div>
 					<div class="card-body">
-						???
+						${ message }
 					</div>
 				</div>
 			</div>

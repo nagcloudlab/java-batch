@@ -2,8 +2,12 @@ package com.example.web;
 
 import java.io.IOException;
 
+import com.example.exception.AccountBalanceException;
+import com.example.exception.AccountNotFoundException;
 import com.example.repository.AccountRepository;
 import com.example.repository.JdbcAccountRepository;
+import com.example.repository.JdbcTransactionRepository;
+import com.example.repository.TransactionRepository;
 import com.example.service.TransferService;
 import com.example.service.UPITransferService;
 
@@ -17,7 +21,8 @@ import jakarta.servlet.http.HttpServletResponse;
 public class TransferServlet extends HttpServlet {
 
 	private AccountRepository accountRepository = new JdbcAccountRepository();
-	private TransferService transferService = new UPITransferService(accountRepository);
+	private TransactionRepository transactionRepository = new JdbcTransactionRepository();
+	private TransferService transferService = new UPITransferService(accountRepository,transactionRepository);
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -27,11 +32,16 @@ public class TransferServlet extends HttpServlet {
 		String source = req.getParameter("source");
 		String destination = req.getParameter("destination");
 
-		// Process
-		transferService.transfer(amount, source, destination);
+		try {
+			// Process
+			transferService.transfer(amount, source, destination);
+			// response
+			req.setAttribute("message", "Transfer Success");
+		} catch (AccountBalanceException | AccountNotFoundException e) {
+			req.setAttribute("message", e.getMessage());
+		}
 
-		// response
-		req.getRequestDispatcher("transfer-status.html").forward(req, resp);
+		req.getRequestDispatcher("transfer-status.jsp").forward(req, resp);
 
 	}
 
